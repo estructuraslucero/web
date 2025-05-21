@@ -31,14 +31,17 @@
       <h3>Nuestros Servicios</h3>
       <div class="cards">
         <div class="card">
+          <img src="public/diseño.webp" alt="Diseño Estructural" class="servicio-img"/>
           <h4>Diseño Estructural</h4>
           <p>Modelado y planos técnicos con software especializado.</p>
         </div>
         <div class="card">
+          <img src="public/fabricacion.webp" alt="Fabricación a Medida" class="servicio-img"/>
           <h4>Fabricación a Medida</h4>
           <p>Producción de estructuras según especificaciones y normativas.</p>
         </div>
         <div class="card">
+          <img src="public/instalacion.webp" alt="Montaje e Instalación" class="servicio-img"/>
           <h4>Montaje e Instalación</h4>
           <p>Instalación segura y eficiente en obra.</p>
         </div>
@@ -47,28 +50,59 @@
   </section>
 
   <section id="nosotros" class="nosotros">
-    <div class="container">
-      <h3>¿Quiénes Somos?</h3>
-      <p>Somos una empresa con más de 10 años de experiencia en estructuras metálicas. Brindamos soluciones integrales, desde el diseño hasta la instalación.</p>
+    <div class="container nosotros-flex">
+      <div class="nosotros-info">
+        <h3>¿Quiénes Somos?</h3>
+        <p>
+          Somos una empresa con más de 20 años de experiencia en estructuras metálicas. Brindamos soluciones integrales, desde el diseño hasta la instalación, comprometidos con la calidad, la seguridad y la satisfacción de nuestros clientes.
+        </p>
+        <ul class="nosotros-valores">
+          <li>✔️ Experiencia y profesionalismo</li>
+          <li>✔️ Atención personalizada</li>
+          <li>✔️ Cumplimiento en tiempos de entrega</li>
+          <li>✔️ Materiales certificados</li>
+        </ul>
+      </div>
+      <div class="nosotros-img">
+        <img src="public/equipo.webp" alt="Nuestro equipo" />
+      </div>
     </div>
   </section>
 
   <section id="contacto" class="contacto">
-    <div class="container">
-      <h3>Contacto</h3>
-      <form id="contactForm" method="POST" autocomplete="off">
+    <div class="container contacto-flex">
+      <div class="contacto-info">
+        <h3>Contacto</h3>
+        <p><strong>¿Tienes un proyecto o necesitas una cotización?</strong><br>
+        Escríbenos y te responderemos a la brevedad.</p>
+        <ul class="contacto-datos">
+          <li>
+            <span class="icono">&#9993;</span>
+            <a href="mailto:lucerodlc@gmail.com">lucerodlc@gmail.com</a>
+          </li>
+          <li>
+            <span class="icono">&#9742;</span>
+            <a href="tel:+51962027322">+51 962027322</a>
+          </li>
+          <li>
+            <span class="icono">&#127968;</span>
+            Lima, Perú
+          </li>
+        </ul>
+      </div>
+      <form id="contactForm" method="POST" autocomplete="off" class="contacto-form">
         <input type="text" name="nombre" placeholder="Tu nombre" required />
         <input type="email" name="email" placeholder="Tu correo" required />
         <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
         <button type="submit">Enviar</button>
+        <div id="mensaje-enviado"></div>
       </form>
-      <div id="mensaje-enviado"></div>
     </div>
   </section>
 
   <footer>
     <div class="container">
-      <p>&copy; 2025 MetalEstructuras. Todos los derechos reservados.</p>
+      <p>&copy; 2025 Estructuras Metálicas Lucero. Todos los derechos reservados.</p>
     </div>
   </footer>
 
